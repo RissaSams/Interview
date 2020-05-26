@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Interview
 {
@@ -6,14 +7,86 @@ namespace Interview
     {
         static void Main(string[] args)
         {
-            //InterviewPG();
-            //InterviewPH();
-            //InterviewPI();
-            //InterviewPR();
-            //InterviewPS();
+            //ProblemA();
+            //ProblemB();
+            //ProblemC();
+            //ProblemD();
+            //ProblemE();
+            //ProblemF():
+            //ProblemG();
+            //ProblemH(); 
+            //ProblemI();
+            //ProbelmJ();
+            //ProblemK();
+            //ProblemL();
+            //ProblemM();
+            //ProblemN();
+            //ProblemO();
+            //ProblemP();
+            //ProblemQ();
+            //ProblemR();
+            //ProblemS();
+            //ProblemT();
+            //ProblemU();
+            //ProblemV();
+            //ProblemW();
+            //Problemx();
         }
 
-        private static void InterviewPG()
+        private static void ProblemA()
+        {
+            int num1, num2;
+            num1 = Utils.GetNumber("Number 1: ");
+            num2 = Utils.GetNumber("Number 2: ");
+
+            if (num1 > num2)
+            {
+                Console.WriteLine(num1 + " is the bigger than " + num2);
+            }
+            else
+            {
+                Console.WriteLine(num2 + " is bigger than " + num1);
+            }
+        }
+
+        private static void ProblemB()
+        {
+            int[] numbers = {349, 340, 49, 529, 23, 23, 53, 64};
+            var biggest = numbers.Max();
+            var smallest = numbers.Min();
+            var ave = numbers.Average();
+            var total = numbers.Aggregate((number, total) => total += number);
+
+            Console.WriteLine("The largest number is " + biggest);
+            Console.WriteLine("The smallest number is " + smallest);
+            Console.WriteLine("The average is " + ave);
+            Console.WriteLine("The total is " + total);
+
+        }
+
+        private static void ProblemC()
+        {
+            int[] numbers = { 234, 54, 45, 452, 2452, 45, 45, 43, 2, 425};
+            Array.Sort(numbers);
+            Console.WriteLine("The second smallest is " + numbers[1]);
+
+            Array.Reverse(numbers);
+            Console.WriteLine("The second biggest is " + numbers[1]);
+        }
+
+        private static void ProblemD()
+        {
+            int[] numbers = {23, 3, 2, 4, 4, 2, 4, 24, 5, 13, 5, 846, 236, 24, 6};
+            foreach (var num in numbers)
+            {
+                if (num > 30)
+                {
+                    
+                }
+            }
+        }
+
+        private static void ProblemG()
         {
 
             int number = Utils.GetNumber("How big do you want the square? ");
@@ -35,7 +108,7 @@ namespace Interview
             }
         }
 
-        private static void InterviewPH()
+        private static void ProblemH()
         {
             while (true)
             {
@@ -63,7 +136,7 @@ namespace Interview
             }
         }
 
-        private static void InterviewPI()
+        private static void ProblemI()
         {
             string phrase = Utils.GetInput("Enter a sentance: ");
             string[] words = phrase.Split(" ");
@@ -92,7 +165,14 @@ namespace Interview
             }
         }
 
-        private static void InterviewPR()
+        private static void ProblemJ()
+        {
+            string name = Utils.GetInput("Type in your full name: ");
+
+            
+        }
+
+        private static void ProblemR()
         {
             for (int i = 1; i <= 100; i++)
             {
@@ -115,7 +195,7 @@ namespace Interview
             }
         }
 
-        private static void InterviewPS()
+        private static void ProblemS()
         {
             int total = 0;
             for (int num = 0; num < 1000; num++)
